@@ -2,7 +2,7 @@ services:
 - type: web
   name: line-bot-python-flaskA
   env: python
-  repo: https://github.com/noubot5632/linebot-python.git
+  repo: https://github.com/bryan29528/testlinebot.git
   buildCommand: cd nouchatbot;pip install -r requirements.txt;pip install pygsheets
   startCommand: cd nouchatbot;gunicorn nouchatbot.wsgi:application
   plan: free
