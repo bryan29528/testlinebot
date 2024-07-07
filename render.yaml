@@ -28,7 +28,7 @@ services:
 # - type: web
 #   name: line-bot-python-flask-kitchensink
 #   env: python
-#   repo: https://github.com/line/line-bot-sdk-python.git
+#   repo: https://github.com/bryan29528/testlinebot.git
 #   buildCommand: cd examples/flask-kitchensink;pip install gunicorn -r requirements.txt
 #   startCommand: cd examples/flask-kitchensink;gunicorn app:app
 #   plan: free
@@ -55,8 +55,8 @@ services:
 #   name: line-bot-python-aiohttp
 #   env: python
 #   repo: https://github.com/line/line-bot-sdk-python.git
-#   buildCommand: cd examples/aiohttp-echo;pip install -r requirements.txt
-#   startCommand: cd examples/aiohttp-echo;python app.py
+#   buildCommand: cd nouchatbot;pip install -r requirements.txt
+#   startCommand: cd nouchatbot; gunicorn nouchatbot.wsgi:application
 #   plan: free
 #   autoDeploy: false
 #   envVars:
